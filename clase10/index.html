@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 10 - Coderhouse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container my-5">
+        <!-- <div class="row">
+            <div class="col">
+                <h1>Eventos</h1>
+                <button id="boton1" class="btn btn-primary">Aceptar</button>
+                <button id="boton2" class="btn btn-primary">Aceptar #2</button>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div id="resultado" class="col"></div>
+        </div> -->
+        <div class="row">
+            <div class="col">
+                <form id="form1" method="post" action="enviar.php">
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="nombre">
+                      <div id="validacionNombre"></div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="text" class="form-control" id="email">
+                      <div id="validacionEmail"></div>
+                    </div>
+                    <button type="submit" id="btnEnviar" class="btn btn-primary">Enviar</button>
+                </form>
+                <form id="formulario" class="my-5">
+                    <input type="text">
+                    <input type="text">
+                    <input type="submit" value="Enviar">
+                </form>
+                <div id="resultado"></div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col">
+                <select id="pais" class="form-control">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Uruguay">Uruguay</option>
+                </select>
+                <div id="paisSeleccionado" class="my-3"></div>
+                <select id="ciudadesPaises" class="form-control"></select>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
