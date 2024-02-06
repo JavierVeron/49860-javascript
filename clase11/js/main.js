@@ -148,12 +148,12 @@ function guardarDatos() {
     productos.push(nuevoProducto);
     //console.log(productos);
 
-    guardarProductosLS(productos);
-    document.getElementById('resultado').innerHTML = `<div class="alert alert-success" role="alert">Los datos se guardaron correctamente!</div>`;
+    guardarProductosLS(productos); // Guardar el producto en la localStorage
+    document.getElementById('resultado').innerHTML = `<div class="alert alert-success" role="alert">Los datos se guardaron correctamente!</div>`; // Imprimo el mensaje
 }
 
 function eliminarDatos() {
-    localStorage.removeItem("productos");
+    localStorage.removeItem("productos"); // Eliminar la localStorage productos
     document.getElementById('resultado').innerHTML = `<div class="alert alert-success" role="alert">Los datos se eliminaron correctamente!</div>`;
 }
 
