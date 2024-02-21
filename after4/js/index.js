@@ -1,8 +1,10 @@
 function renderProductos() {
     const productos = obtenerProductosLS();
+    const categoria = obtenerIdCategoriaLS();
+    const productosFiltrados = categoria === 'todos' ? productos : productos.filter(item => item.categoria === categoria);
     let contenido = "";
 
-    for (const producto of productos) {
+    for (const producto of productosFiltrados) {
         contenido += `<div class="col-md-4 text-center">
         <a href="producto.html" onclick="verProducto(${producto.id});" class="text-decoration-none">
         <img src="${producto.imagen}" alt="${producto.nombre}" height="244" />
@@ -15,3 +17,4 @@ function renderProductos() {
 }
 
 renderProductos();
+renderBotonCarrito();
